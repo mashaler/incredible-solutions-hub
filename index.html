@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Incredible Solutions Hub</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Hover animation for product cards and featured posters */
+    .product:hover, .featured-poster:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+  </style>
 </head>
 <body class="bg-gray-100 font-sans">
 
@@ -15,12 +23,89 @@
   </header>
 
   <!-- Hero -->
-  <section class="text-center py-12 px-4">
-    <h2 class="text-4xl font-bold mb-4">Professional Templates in Minutes</h2>
-    <p class="text-gray-600 mb-6">CVs, Posters, Logos & More</p>
-    <a href="https://wa.me/27737555225" target="_blank">
-      <button class="bg-green-500 text-white px-6 py-3 rounded-2xl shadow">Order on WhatsApp</button>
-    </a>
+  <section class="text-center py-12 px-4 bg-gradient-to-r from-blue-500 to-blue-700 text-white">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4">Professional Templates in Minutes</h2>
+    <p class="text-lg md:text-xl mb-6">CVs, Posters, Logos & More</p>
+    <div class="flex justify-center gap-4 flex-wrap">
+      <a href="#products">
+        <button class="bg-green-500 text-white px-6 py-3 rounded-2xl shadow hover:bg-green-600 transition">View Products</button>
+      </a>
+      <a href="https://wa.me/27737555225" target="_blank">
+        <button class="bg-white text-blue-700 px-6 py-3 rounded-2xl shadow hover:bg-gray-200 transition">Order on WhatsApp</button>
+      </a>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="p-8 text-center bg-gray-100">
+    <h2 class="text-3xl font-bold mb-6">How It Works</h2>
+    <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <h3 class="text-xl font-semibold mb-2">1. Browse Templates</h3>
+        <p>Explore CVs, Posters, Logos & more. Use search or scroll through categories to find what you need.</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <h3 class="text-xl font-semibold mb-2">2. Place Order</h3>
+        <p>Click “Buy” or “Order” on your chosen template and follow payment instructions. All orders are processed quickly.</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <h3 class="text-xl font-semibold mb-2">3. Receive & Customize</h3>
+        <p>Send payment proof on WhatsApp. You’ll get your file instantly and can edit it to your needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Posters Section -->
+  <section class="p-8 text-center bg-white">
+    <h2 class="text-3xl font-bold mb-6">Featured Posters</h2>
+    <p class="text-gray-600 mb-6">See some of our sample poster designs before you order.</p>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="featured-poster rounded-2xl overflow-hidden shadow">
+        <img src="https://via.placeholder.com/300x400?text=Poster+1" alt="Poster 1" class="w-full">
+        <p class="p-4 font-semibold">Event Poster</p>
+      </div>
+      <div class="featured-poster rounded-2xl overflow-hidden shadow">
+        <img src="https://via.placeholder.com/300x400?text=Poster+2" alt="Poster 2" class="w-full">
+        <p class="p-4 font-semibold">Business Promotion</p>
+      </div>
+      <div class="featured-poster rounded-2xl overflow-hidden shadow">
+        <img src="https://via.placeholder.com/300x400?text=Poster+3" alt="Poster 3" class="w-full">
+        <p class="p-4 font-semibold">Social Media Flyer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Table -->
+  <section class="p-8 text-center bg-gray-50">
+    <h2 class="text-3xl font-bold mb-6">Our Pricing</h2>
+    <div class="overflow-x-auto">
+      <table class="min-w-full bg-white rounded-xl shadow overflow-hidden">
+        <thead class="bg-blue-700 text-white">
+          <tr>
+            <th class="py-3 px-6 text-left">Product</th>
+            <th class="py-3 px-6 text-left">Price</th>
+            <th class="py-3 px-6 text-left">Features</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b hover:bg-gray-50">
+            <td class="py-3 px-6">Basic CV</td>
+            <td class="py-3 px-6">R150</td>
+            <td class="py-3 px-6">Simple & professional, editable</td>
+          </tr>
+          <tr class="border-b hover:bg-gray-50">
+            <td class="py-3 px-6">Premium CV</td>
+            <td class="py-3 px-6">R250</td>
+            <td class="py-3 px-6">Modern design, editable</td>
+          </tr>
+          <tr class="border-b hover:bg-gray-50">
+            <td class="py-3 px-6">Poster Templates</td>
+            <td class="py-3 px-6">R200</td>
+            <td class="py-3 px-6">Editable & print-ready</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </section>
 
   <!-- Search -->
@@ -30,64 +115,78 @@
 
   <!-- Products -->
   <section id="products" class="grid md:grid-cols-3 gap-6 p-6">
-
     <div class="product bg-white p-6 rounded-2xl shadow" data-name="cv">
       <h3 class="text-xl font-bold mb-2">Basic CV Template (R150)</h3>
-      <p class="text-gray-600">Simple and professional CV</p>
+      <img src="https://via.placeholder.com/150" alt="Basic CV Preview" class="mb-2 rounded">
+      <p class="text-gray-600">Simple and professional CV, editable and ready to use.</p>
       <a href="#payment">
-        <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">Buy</button>
+        <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Buy</button>
       </a>
     </div>
 
     <div class="product bg-white p-6 rounded-2xl shadow" data-name="premium cv">
       <h3 class="text-xl font-bold mb-2">Premium CV (R250)</h3>
-      <p class="text-gray-600">Modern design</p>
+      <img src="https://via.placeholder.com/150" alt="Premium CV Preview" class="mb-2 rounded">
+      <p class="text-gray-600">Modern and eye-catching design, fully editable.</p>
       <a href="#payment">
-        <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">Buy</button>
+        <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Buy</button>
       </a>
     </div>
 
     <div class="product bg-white p-6 rounded-2xl shadow" data-name="poster">
-      <h3 class="text-xl font-bold mb-2">Poster Templates(R350)</h3>
-      <p class="text-gray-600">Editable designs</p>
+      <h3 class="text-xl font-bold mb-2">Poster Templates (R200)</h3>
+      <img src="https://via.placeholder.com/150" alt="Poster Preview" class="mb-2 rounded">
+      <p class="text-gray-600">Editable and print-ready designs, perfect for promotions.</p>
       <a href="https://wa.me/27737555225" target="_blank">
-        <button class="mt-4 bg-purple-600 text-white px-4 py-2 rounded">Order</button>
+        <button class="mt-4 bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">Order</button>
       </a>
     </div>
-
   </section>
 
   <!-- Payment Section -->
   <section id="payment" class="bg-white p-8 text-center">
     <h2 class="text-2xl font-bold mb-4">Payment Details</h2>
-
     <p><strong>Bank:</strong> Capitec</p>
     <p><strong>Account Number:</strong> 1593349163</p>
     <p><strong>Account Holder:</strong> MASHALE R</p>
     <p><strong>Reference:</strong> Your Name</p>
-
     <p class="text-red-500 mt-4">Send proof of payment on WhatsApp after paying.</p>
-
     <a href="https://wa.me/27737555225" target="_blank">
-      <button class="mt-4 bg-green-600 text-white px-6 py-3 rounded">Send Proof</button>
+      <button class="mt-4 bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition">Send Proof</button>
     </a>
   </section>
 
-  <!-- Testimonials -->
+  <!-- Testimonials Carousel -->
   <section class="p-8 text-center bg-gray-50">
     <h2 class="text-2xl font-bold mb-6">What Customers Say</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-white p-4 rounded-xl shadow">"Got a job using this CV!" ⭐⭐⭐⭐⭐</div>
-      <div class="bg-white p-4 rounded-xl shadow">"Very fast and affordable" ⭐⭐⭐⭐⭐</div>
-      <div class="bg-white p-4 rounded-xl shadow">"Highly recommend!" ⭐⭐⭐⭐⭐</div>
+    <div class="flex overflow-x-auto gap-4 py-4 px-2">
+      <div class="bg-white p-6 rounded-xl shadow min-w-[250px] flex-shrink-0">
+        <p>"Got a job using this CV!"</p>
+        <p>⭐⭐⭐⭐⭐</p>
+        <p class="text-sm mt-2">- Sarah M.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow min-w-[250px] flex-shrink-0">
+        <p>"Very fast and affordable"</p>
+        <p>⭐⭐⭐⭐⭐</p>
+        <p class="text-sm mt-2">- James K.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow min-w-[250px] flex-shrink-0">
+        <p>"Highly recommend!"</p>
+        <p>⭐⭐⭐⭐⭐</p>
+        <p class="text-sm mt-2">- Linda T.</p>
+      </div>
     </div>
   </section>
 
   <!-- FAQ -->
   <section class="p-8 text-center">
     <h2 class="text-2xl font-bold mb-4">FAQ</h2>
-    <p><strong>How do I receive my file?</strong><br>After payment, send proof on WhatsApp.</p>
-    <p class="mt-4"><strong>Can I edit templates?</strong><br>Yes, all templates are editable.</p>
+    <div class="max-w-3xl mx-auto text-left space-y-4">
+      <p><strong>How do I receive my file?</strong><br>After payment, send proof on WhatsApp and your file will be delivered instantly.</p>
+      <p><strong>Can I edit templates?</strong><br>Yes, all templates are fully editable.</p>
+      <p><strong>What formats do you provide?</strong><br>PDF, PNG, and editable PSD files.</p>
+      <p><strong>Do you offer discounts for multiple purchases?</strong><br>Yes! Contact us on WhatsApp for bundle deals.</p>
+    </div>
   </section>
 
   <!-- Footer -->
