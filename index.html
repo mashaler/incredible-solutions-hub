@@ -5,9 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Incredible Solutions Hub</title>
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Google AdSense (Replace with your code) -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body class="bg-gray-100 font-sans">
 
@@ -19,48 +16,40 @@
 
   <!-- Hero -->
   <section class="text-center py-12 px-4">
-    <h2 class="text-4xl font-bold mb-4">Ready-Made Templates for Your Success</h2>
-    <p class="text-gray-600 mb-6">Download professional CVs, posters, and logos instantly.</p>
-
+    <h2 class="text-4xl font-bold mb-4">Professional Templates in Minutes</h2>
+    <p class="text-gray-600 mb-6">CVs, Posters, Logos & More</p>
     <a href="https://wa.me/27737555225" target="_blank">
       <button class="bg-green-500 text-white px-6 py-3 rounded-2xl shadow">Order on WhatsApp</button>
     </a>
   </section>
 
-  <!-- Ad Section -->
-  <div class="text-center my-6">
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-XXXXXXXXXXXX"
-         data-ad-slot="1234567890"
-         data-ad-format="auto"></ins>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  </div>
+  <!-- Search -->
+  <section class="p-6 text-center">
+    <input id="search" type="text" placeholder="Search templates..." class="w-full md:w-1/2 p-3 border rounded-xl" onkeyup="filterTemplates()">
+  </section>
 
   <!-- Products -->
-  <section class="grid md:grid-cols-3 gap-6 p-6">
+  <section id="products" class="grid md:grid-cols-3 gap-6 p-6">
 
-    <div class="bg-white p-6 rounded-2xl shadow">
+    <div class="product bg-white p-6 rounded-2xl shadow" data-name="cv">
       <h3 class="text-xl font-bold mb-2">Free CV Template</h3>
-      <p class="text-gray-600">Download instantly</p>
+      <p class="text-gray-600">Basic CV</p>
       <a href="cv-template.pdf" download>
         <button class="mt-4 bg-green-500 text-white px-4 py-2 rounded">Download</button>
       </a>
     </div>
 
-    <div class="bg-white p-6 rounded-2xl shadow">
+    <div class="product bg-white p-6 rounded-2xl shadow" data-name="premium cv">
       <h3 class="text-xl font-bold mb-2">Premium CV (R30)</h3>
-      <p class="text-gray-600">Send payment then receive file</p>
+      <p class="text-gray-600">Modern design</p>
       <a href="#payment">
-        <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">Buy Now</button>
+        <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">Buy</button>
       </a>
     </div>
 
-    <div class="bg-white p-6 rounded-2xl shadow">
-      <h3 class="text-xl font-bold mb-2">Posters & Logos</h3>
-      <p class="text-gray-600">Custom designs</p>
+    <div class="product bg-white p-6 rounded-2xl shadow" data-name="poster">
+      <h3 class="text-xl font-bold mb-2">Poster Templates</h3>
+      <p class="text-gray-600">Editable designs</p>
       <a href="https://wa.me/27737555225" target="_blank">
         <button class="mt-4 bg-purple-600 text-white px-4 py-2 rounded">Order</button>
       </a>
@@ -72,36 +61,52 @@
   <section id="payment" class="bg-white p-8 text-center">
     <h2 class="text-2xl font-bold mb-4">Payment Details</h2>
 
-    <p class="mb-2"><strong>Bank:</strong> YOUR BANK NAME</p>
-    <p class="mb-2"><strong>Account Number:</strong> XXXXXXXX</p>
-    <p class="mb-2"><strong>Account Holder:</strong> YOUR NAME</p>
-    <p class="mb-4"><strong>Reference:</strong> Your Name</p>
+    <p><strong>Bank:</strong> YOUR BANK</p>
+    <p><strong>Account Number:</strong> XXXXXXXX</p>
+    <p><strong>Account Holder:</strong> YOUR NAME</p>
+    <p><strong>Reference:</strong> Your Name</p>
 
-    <p class="text-red-500">After payment, send proof on WhatsApp to receive your template.</p>
+    <p class="text-red-500 mt-4">Send proof of payment on WhatsApp after paying.</p>
 
     <a href="https://wa.me/27737555225" target="_blank">
-      <button class="mt-4 bg-green-600 text-white px-6 py-3 rounded">Send Proof of Payment</button>
+      <button class="mt-4 bg-green-600 text-white px-6 py-3 rounded">Send Proof</button>
     </a>
   </section>
 
-  <!-- About -->
-  <section class="p-8 text-center">
-    <h2 class="text-2xl font-bold mb-4">Why Choose Us?</h2>
-    <p class="text-gray-600 max-w-xl mx-auto">
-      Affordable, fast, and professional templates for job seekers and businesses.
-    </p>
+  <!-- Testimonials -->
+  <section class="p-8 text-center bg-gray-50">
+    <h2 class="text-2xl font-bold mb-6">What Customers Say</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white p-4 rounded-xl shadow">"Got a job using this CV!" ⭐⭐⭐⭐⭐</div>
+      <div class="bg-white p-4 rounded-xl shadow">"Very fast and affordable" ⭐⭐⭐⭐⭐</div>
+      <div class="bg-white p-4 rounded-xl shadow">"Highly recommend!" ⭐⭐⭐⭐⭐</div>
+    </div>
   </section>
 
-  <!-- Contact -->
+  <!-- FAQ -->
   <section class="p-8 text-center">
-    <h2 class="text-2xl font-bold mb-4">Contact</h2>
-    <p>WhatsApp: 073 755 5225 / 071 338 7578</p>
+    <h2 class="text-2xl font-bold mb-4">FAQ</h2>
+    <p><strong>How do I receive my file?</strong><br>After payment, send proof on WhatsApp.</p>
+    <p class="mt-4"><strong>Can I edit templates?</strong><br>Yes, all templates are editable.</p>
   </section>
 
   <!-- Footer -->
   <footer class="bg-blue-700 text-white text-center p-4">
     <p>© 2026 Incredible Solutions Hub</p>
   </footer>
+
+  <!-- Script -->
+  <script>
+    function filterTemplates() {
+      let input = document.getElementById('search').value.toLowerCase();
+      let products = document.getElementsByClassName('product');
+
+      for (let i = 0; i < products.length; i++) {
+        let name = products[i].getAttribute('data-name');
+        products[i].style.display = name.includes(input) ? 'block' : 'none';
+      }
+    }
+  </script>
 
 </body>
 </html>
