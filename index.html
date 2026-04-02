@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Incredible Solutions Hub</title>
   <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
-    /* Hover animation for product cards and featured posters */
     .product:hover, .featured-poster:hover {
       transform: translateY(-5px) scale(1.02);
       box-shadow: 0 10px 20px rgba(0,0,0,0.2);
@@ -14,198 +14,186 @@
     }
   </style>
 </head>
+
 <body class="bg-gray-100 font-sans">
 
-  <!-- Header -->
-  <header class="bg-blue-700 text-white p-6 text-center">
-    <h1 class="text-3xl font-bold">Incredible Solutions Hub</h1>
-    <p class="text-lg">Design Smart. Succeed Faster.</p>
-  </header>
+<!-- Header -->
+<header class="bg-blue-700 text-white p-6 text-center">
+  <h1 class="text-3xl font-bold">Incredible Solutions Hub</h1>
+  <p>Design Smart. Succeed Faster.</p>
+</header>
 
-  <!-- Hero -->
-  <section class="text-center py-12 px-4 bg-gradient-to-r from-blue-500 to-blue-700 text-white">
-    <h2 class="text-4xl md:text-5xl font-bold mb-4">Professional Templates in Minutes</h2>
-    <p class="text-lg md:text-xl mb-6">CVs, Posters, Logos & More</p>
-    <div class="flex justify-center gap-4 flex-wrap">
-      <a href="#products">
-        <button class="bg-green-500 text-white px-6 py-3 rounded-2xl shadow hover:bg-green-600 transition">View Products</button>
-      </a>
-      <a href="https://wa.me/27737555225" target="_blank">
-        <button class="bg-white text-blue-700 px-6 py-3 rounded-2xl shadow hover:bg-gray-200 transition">Order on WhatsApp</button>
-      </a>
-    </div>
-  </section>
+<!-- NAV -->
+<nav class="bg-white shadow p-4 flex justify-center gap-6 font-semibold">
+  <a href="#products">Digital Products</a>
+  <a href="#loans">Loans</a>
+  <a href="#tech">Tech Services</a>
+</nav>
 
-  <!-- How It Works Section -->
-  <section class="p-8 text-center bg-gray-100">
-    <h2 class="text-3xl font-bold mb-6">How It Works</h2>
-    <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-      <div class="bg-white p-6 rounded-2xl shadow">
-        <h3 class="text-xl font-semibold mb-2">1. Browse Templates</h3>
-        <p>Explore CVs, Posters, Logos & more. Use search or scroll through categories to find what you need.</p>
-      </div>
-      <div class="bg-white p-6 rounded-2xl shadow">
-        <h3 class="text-xl font-semibold mb-2">2. Place Order</h3>
-        <p>Click “Buy” or “Order” on your chosen template and follow payment instructions. All orders are processed quickly.</p>
-      </div>
-      <div class="bg-white p-6 rounded-2xl shadow">
-        <h3 class="text-xl font-semibold mb-2">3. Receive & Customize</h3>
-        <p>Send payment proof on WhatsApp. You’ll get your file instantly and can edit it to your needs.</p>
-      </div>
-    </div>
-  </section>
+<!-- HERO -->
+<section class="text-center py-12 bg-blue-600 text-white">
+  <h2 class="text-4xl font-bold">All Your Business Needs In One Place</h2>
+  <p class="mt-4">Loans • CVs • Posters • Websites</p>
+</section>
 
-  <!-- Featured Posters Section -->
-  <section class="p-8 text-center bg-white">
-    <h2 class="text-3xl font-bold mb-6">Featured Posters</h2>
-    <p class="text-gray-600 mb-6">See some of our sample poster designs before you order.</p>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="featured-poster rounded-2xl overflow-hidden shadow">
-        <img src="https://via.placeholder.com/300x400?text=Poster+1" alt="Poster 1" class="w-full">
-        <p class="p-4 font-semibold">Event Poster</p>
-      </div>
-      <div class="featured-poster rounded-2xl overflow-hidden shadow">
-        <img src="https://via.placeholder.com/300x400?text=Poster+2" alt="Poster 2" class="w-full">
-        <p class="p-4 font-semibold">Business Promotion</p>
-      </div>
-      <div class="featured-poster rounded-2xl overflow-hidden shadow">
-        <img src="https://via.placeholder.com/300x400?text=Poster+3" alt="Poster 3" class="w-full">
-        <p class="p-4 font-semibold">Social Media Flyer</p>
-      </div>
-    </div>
-  </section>
+<!-- LOANS -->
+<section id="loans" class="p-8 bg-white text-center">
+  <h2 class="text-3xl font-bold mb-4">Apply for a Loan</h2>
 
-  <!-- Pricing Table -->
-  <section class="p-8 text-center bg-gray-50">
-    <h2 class="text-3xl font-bold mb-6">Our Pricing</h2>
-    <div class="overflow-x-auto">
-      <table class="min-w-full bg-white rounded-xl shadow overflow-hidden">
-        <thead class="bg-blue-700 text-white">
-          <tr>
-            <th class="py-3 px-6 text-left">Product</th>
-            <th class="py-3 px-6 text-left">Price</th>
-            <th class="py-3 px-6 text-left">Features</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="border-b hover:bg-gray-50">
-            <td class="py-3 px-6">Basic CV</td>
-            <td class="py-3 px-6">R150</td>
-            <td class="py-3 px-6">Simple & professional, editable</td>
-          </tr>
-          <tr class="border-b hover:bg-gray-50">
-            <td class="py-3 px-6">Premium CV</td>
-            <td class="py-3 px-6">R250</td>
-            <td class="py-3 px-6">Modern design, editable</td>
-          </tr>
-          <tr class="border-b hover:bg-gray-50">
-            <td class="py-3 px-6">Poster Templates</td>
-            <td class="py-3 px-6">R200</td>
-            <td class="py-3 px-6">Editable & print-ready</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
+  <!-- Calculator -->
+  <div class="max-w-md mx-auto mb-6">
+    <input id="loanAmount" type="number" placeholder="Loan Amount" class="w-full p-3 border rounded mb-2">
+    <input id="loanMonths" type="number" placeholder="Months" class="w-full p-3 border rounded mb-2">
+    <button onclick="calcLoan()" class="bg-blue-600 text-white p-2 w-full rounded">Calculate</button>
+    <p id="loanResult" class="mt-3"></p>
+  </div>
 
-  <!-- Search -->
-  <section class="p-6 text-center">
-    <input id="search" type="text" placeholder="Search templates..." class="w-full md:w-1/2 p-3 border rounded-xl" onkeyup="filterTemplates()">
-  </section>
+  <!-- Form -->
+  <form action="https://formsubmit.co/mashalerolva@gmail.com" method="POST" enctype="multipart/form-data" class="max-w-md mx-auto space-y-3">
 
-  <!-- Products -->
-  <section id="products" class="grid md:grid-cols-3 gap-6 p-6">
-    <div class="product bg-white p-6 rounded-2xl shadow" data-name="cv">
-      <h3 class="text-xl font-bold mb-2">Basic CV Template (R150)</h3>
-      <img src="https://via.placeholder.com/150" alt="Basic CV Preview" class="mb-2 rounded">
-      <p class="text-gray-600">Simple and professional CV, editable and ready to use.</p>
-      <a href="#payment">
-        <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Buy</button>
-      </a>
+    <input type="text" name="Full Name" placeholder="Full Name" required class="w-full p-3 border rounded">
+  
+    <input type="tel" name="Phone" placeholder="Phone Number" required class="w-full p-3 border rounded">
+  
+    <input type="number" name="Loan Amount" placeholder="Loan Amount" required class="w-full p-3 border rounded">
+  
+    <select name="Employment Status" required class="w-full p-3 border rounded">
+      <option value="">Employment Status</option>
+      <option>Employed</option>
+      <option>Self-employed</option>
+      <option>Unemployed</option>
+    </select>
+  
+    <label>Payslip</label>
+    <input type="file" name="Payslip" required>
+  
+    <label>Bank Statement</label>
+    <input type="file" name="Bank Statement" required>
+  
+    <!-- Hidden settings -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="New Loan Application!">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://mashaler.github.io/thankyou.html">
+  
+    <button class="bg-green-600 text-white p-3 w-full rounded">
+      Apply Now
+    </button>
+  
+  </form>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="p-8 grid md:grid-cols-3 gap-6">
+
+  <div class="product bg-white p-6 rounded shadow">
+    <h3>Basic CV (R150)</h3>
+    <p>Professional CV</p>
+  </div>
+
+  <div class="product bg-white p-6 rounded shadow">
+    <h3>Premium CV (R250)</h3>
+    <p>Modern CV</p>
+  </div>
+
+  <div class="product bg-white p-6 rounded shadow">
+    <h3>Posters (R200)</h3>
+    <p>Editable designs</p>
+  </div>
+
+</section>
+
+<!-- TECH SERVICES -->
+<section id="tech" class="p-8 bg-gray-200 text-center">
+  <h2 class="text-3xl font-bold mb-6">Tech Services</h2>
+
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <div class="bg-white p-6 rounded shadow">
+      <h3>Website Creation</h3>
+      <p>From R1500</p>
     </div>
 
-    <div class="product bg-white p-6 rounded-2xl shadow" data-name="premium cv">
-      <h3 class="text-xl font-bold mb-2">Premium CV (R250)</h3>
-      <img src="https://via.placeholder.com/150" alt="Premium CV Preview" class="mb-2 rounded">
-      <p class="text-gray-600">Modern and eye-catching design, fully editable.</p>
-      <a href="#payment">
-        <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Buy</button>
-      </a>
+    <div class="bg-white p-6 rounded shadow">
+      <h3>Website Fixing</h3>
+      <p>From R500</p>
     </div>
 
-    <div class="product bg-white p-6 rounded-2xl shadow" data-name="poster">
-      <h3 class="text-xl font-bold mb-2">Poster Templates (R200)</h3>
-      <img src="https://via.placeholder.com/150" alt="Poster Preview" class="mb-2 rounded">
-      <p class="text-gray-600">Editable and print-ready designs, perfect for promotions.</p>
-      <a href="https://wa.me/27737555225" target="_blank">
-        <button class="mt-4 bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-700 transition">Order</button>
-      </a>
+    <div class="bg-white p-6 rounded shadow">
+      <h3>Maintenance</h3>
+      <p>From R300/month</p>
     </div>
-  </section>
 
-  <!-- Payment Section -->
-  <section id="payment" class="bg-white p-8 text-center">
-    <h2 class="text-2xl font-bold mb-4">Payment Details</h2>
-    <p><strong>Bank:</strong> Capitec</p>
-    <p><strong>Account Number:</strong> 1593349163</p>
-    <p><strong>Account Holder:</strong> MASHALE R</p>
-    <p><strong>Reference:</strong> Your Name</p>
-    <p class="text-red-500 mt-4">Send proof of payment on WhatsApp after paying.</p>
-    <a href="https://wa.me/27737555225" target="_blank">
-      <button class="mt-4 bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition">Send Proof</button>
-    </a>
-  </section>
+  </div>
+</section>
 
-  <!-- Testimonials Carousel -->
-  <section class="p-8 text-center bg-gray-50">
-    <h2 class="text-2xl font-bold mb-6">What Customers Say</h2>
-    <div class="flex overflow-x-auto gap-4 py-4 px-2">
-      <div class="bg-white p-6 rounded-xl shadow min-w-[250px] flex-shrink-0">
-        <p>"Got a job using this CV!"</p>
-        <p>⭐⭐⭐⭐⭐</p>
-        <p class="text-sm mt-2">- Sarah M.</p>
-      </div>
-      <div class="bg-white p-6 rounded-xl shadow min-w-[250px] flex-shrink-0">
-        <p>"Very fast and affordable"</p>
-        <p>⭐⭐⭐⭐⭐</p>
-        <p class="text-sm mt-2">- James K.</p>
-      </div>
-      <div class="bg-white p-6 rounded-xl shadow min-w-[250px] flex-shrink-0">
-        <p>"Highly recommend!"</p>
-        <p>⭐⭐⭐⭐⭐</p>
-        <p class="text-sm mt-2">- Linda T.</p>
-      </div>
-    </div>
-  </section>
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/27737555225"
+   class="fixed bottom-5 right-5 bg-green-500 text-white p-4 rounded-full">
+   💬
+</a>
 
-  <!-- FAQ -->
-  <section class="p-8 text-center">
-    <h2 class="text-2xl font-bold mb-4">FAQ</h2>
-    <div class="max-w-3xl mx-auto text-left space-y-4">
-      <p><strong>How do I receive my file?</strong><br>After payment, send proof on WhatsApp and your file will be delivered instantly.</p>
-      <p><strong>Can I edit templates?</strong><br>Yes, all templates are fully editable.</p>
-      <p><strong>What formats do you provide?</strong><br>PDF, PNG, and editable PSD files.</p>
-      <p><strong>Do you offer discounts for multiple purchases?</strong><br>Yes! Contact us on WhatsApp for bundle deals.</p>
-    </div>
-  </section>
+<!-- FIREBASE -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js"></script>
 
-  <!-- Footer -->
-  <footer class="bg-blue-700 text-white text-center p-4">
-    <p>© 2026 Incredible Solutions Hub</p>
-  </footer>
+<script>
+const firebaseConfig = {
+  apiKey: "YOUR_KEY",
+  authDomain: "YOUR_DOMAIN",
+  projectId: "YOUR_ID",
+  storageBucket: "YOUR_BUCKET"
+};
 
-  <!-- Script -->
-  <script>
-    function filterTemplates() {
-      let input = document.getElementById('search').value.toLowerCase();
-      let products = document.getElementsByClassName('product');
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+const storage = firebase.storage();
+</script>
 
-      for (let i = 0; i < products.length; i++) {
-        let name = products[i].getAttribute('data-name');
-        products[i].style.display = name.includes(input) ? 'block' : 'none';
-      }
-    }
-  </script>
+<!-- LOGIC -->
+<script>
+// Loan calculator
+function calcLoan() {
+  let a = loanAmount.value;
+  let m = loanMonths.value;
+
+  let total = a * 1.3;
+  let monthly = total / m;
+
+  loanResult.innerHTML = "Total: R" + total + " | Monthly: R" + monthly;
+}
+
+// Submit form
+loanForm.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  let payslip = payslip.files[0];
+  let statement = statement.files[0];
+
+  let pRef = storage.ref("payslips/" + payslip.name);
+  await pRef.put(payslip);
+  let pURL = await pRef.getDownloadURL();
+
+  let sRef = storage.ref("statements/" + statement.name);
+  await sRef.put(statement);
+  let sURL = await sRef.getDownloadURL();
+
+  let score = loan.value < 5000 ? 50 : 20;
+
+  await db.collection("applications").add({
+    name: name.value,
+    phone: phone.value,
+    loan: loan.value,
+    payslip: pURL,
+    statement: sURL,
+    score: score,
+    status: "pending"
+  });
+
+  alert("Application submitted");
+});
+</script>
 
 </body>
 </html>
